@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finger Game</title>
+  <style>
+  body{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+  }
+    button{
+      display :block;
+      margin-top:20px;
+      padding :15px;
+      border:none;
+      background-color:gray;
+      color:white;
+      border-radius:15px;
+      font-size:17px;
+      width:100%;
+    }
+    button:active{
+      opacity :0.7;
+    }
+    p{
+      color:red;
+      display :inline;
+      text-align: center;
+    }
+    #win{
+      margin-top: 50px;
+      margin-left:39%;
+      font-size: 20px;
+    }
+      #lose{
+      display:inline;
+      margin-left:39%;
+      font-size: 20px
+    }
+    #text{
+      margin-left:1%; 
+      margin-top: 10px;
+      color: blue;
+      font-size: 17px
+    }
+    
+  </style>
+</head>
+<div>
+  <h2>Finger Game</h2>
+  <h4>RULE:<p> If you pick the same finger with the computer you will lose, otherwise you will win.</p></h4>
+<button id="thumb"> Thumb finger</button>
+<button id="index"> Index finger</button>
+<button id="middle"> Middle finger</button>
+<button id="ring"> Ring finger</button>
+<button id="pinky"> pinky finger</button>
+
+<div id="text"></div>
+<div id="win">Wins: 0</div>
+<div id="lose">Losses: 0</div>
+</div>
+
+<body>
+<script src="fingerGame.js"></script>
+</body>
+
+</html>
